@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+<com.togive.login.LineEditText
+    android:id="@+id/editText1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/imageView1"
+    android:layout_marginTop="48dp"
+    android:inputType="textPassword"
+	android:background="@android:color/darker_gray"
+    android:ems="10" />
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/editText1"
+    android:layout_alignRight="@+id/editText1"
+    android:layout_below="@+id/editText1"
+    android:layout_marginTop="14dp"
+    android:background="@drawable/corners_bg"
+    android:onClick="login"
+    android:text="@string/login"
+    android:textColor="#FFFFFF" />
+
+<Button
+    android:id="@+id/button3"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/button1"
+    android:layout_below="@+id/button1"
+    android:layout_marginTop="23dp"
+    android:background="@null"
+    android:onClick="setting"
+    android:text="@string/forgive"
+    android:textColor="#66CCFF"
+    android:textSize="18sp" />
+
+<Button
+    android:id="@+id/button4"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/button3"
+    android:layout_alignBottom="@+id/button3"
+    android:layout_toLeftOf="@+id/button3"
+    android:background="@null"
+    android:onClick="exit"
+    android:text="@string/exit"
+    android:textColor="#66CCFF"
+    android:textSize="18sp" />
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="24dp"
+    android:contentDescription="@string/login"
+    android:src="@drawable/hehe3" />
+
+</RelativeLayout>
+

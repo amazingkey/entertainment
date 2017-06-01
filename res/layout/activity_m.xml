@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+       <android.support.v4.view.ViewPager
+            android:id="@+id/adv_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="210dp" >
+        </android.support.v4.view.ViewPager>
+        
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-25px"
+            android:gravity="right"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/viewbg" >
+                
+                
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+			android:layout_marginBottom="40dp" android:paddingLeft="40dp"
+			android:paddingRight="40dp" android:orientation="vertical"
+			android:gravity="center_horizontal"
+			android:layoutAnimation="@anim/animlayout"
+			>
+
+		<ImageView android:id="@+id/funtime"
+			android:layout_width="wrap_content" android:layout_height="30dp"
+			android:src="@drawable/funtime"
+			android:contentDescription="@string/about"
+			android:onClick="ab" />
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="10dp" android:background="@drawable/split_line" />
+		
+		<ImageView android:id="@+id/gamestime"
+			android:layout_width="wrap_content" android:layout_height="30dp"
+			android:src="@drawable/gamestime"
+			android:contentDescription="@string/about"
+			android:onClick="ab" />
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="10dp" android:background="@drawable/split_line" />
+		
+		<ImageView android:id="@+id/truewordsicon"
+			android:layout_width="wrap_content" android:layout_height="30dp"
+			android:src="@drawable/truewordsicon"
+			android:contentDescription="@string/about"
+			android:onClick="ab" />
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="10dp" android:background="@drawable/split_line" />
+		
+
+		<ImageView android:id="@+id/searchicon"
+			android:layout_width="fill_parent" android:layout_height="30dp"
+			android:src="@drawable/searchicon" 
+			android:contentDescription="@string/about" 
+			android:onClick="ab"/>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="10dp" android:background="@drawable/split_line" />
+
+		<ImageView android:id="@+id/abouticon"
+			android:layout_width="fill_parent" android:layout_height="30dp"
+			android:src="@drawable/abouticon" 
+			android:contentDescription="@string/about"
+			android:onClick="ab"/>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="10dp" android:background="@drawable/split_line" />
+
+
+
+		<ImageView android:id="@+id/exit"
+			android:layout_width="fill_parent" android:layout_height="30dp"
+			android:src="@drawable/exitx" 
+			android:contentDescription="@string/about" 
+			android:onClick="ab"/>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="10dp" android:background="@drawable/split_line" />
+
+
+
+	</LinearLayout>
+
+            </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/viewbackground">
+
+	<!-- 帮助信息 -->
+
+    <LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+			android:layout_marginBottom="40dp" android:paddingLeft="40dp"
+			android:paddingRight="40dp" android:orientation="vertical"
+			android:gravity="center_horizontal"
+			android:layoutAnimation="@anim/animlayout">
+
+		<ImageView android:id="@+id/picturewall"
+			android:layout_width="wrap_content" android:layout_height="30dp"
+			android:src="@drawable/lfya"
+			android:contentDescription="@string/about"
+			android:onClick="ab" />
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="10dp" android:background="@drawable/split_line" />
+		
+		<ImageView android:id="@+id/lianliankan"
+			android:layout_width="wrap_content" android:layout_height="30dp"
+			android:src="@drawable/lfyc"
+			android:contentDescription="@string/about"
+			android:onClick="ab" />
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="10dp" android:background="@drawable/split_line" />
+
+
+
+		<ImageView android:id="@+id/exit"
+			android:layout_width="fill_parent" android:layout_height="30dp"
+			android:src="@drawable/lfyd" 
+			android:contentDescription="@string/about" 
+			android:onClick="ab"/>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="10dp" android:background="@drawable/split_line" />
+
+
+
+	</LinearLayout>
+</LinearLayout>

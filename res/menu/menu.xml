@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item	android:id="@+id/forward" 
+  		android:icon="@drawable/forward"
+   		android:title="@string/forward"/>	
+  <item	android:id="@+id/refresh"
+  		android:icon="@drawable/refresh"
+  		android:title="@string/refresh"/>
+  <item	android:id="@+id/bookmark"
+  		android:icon="@drawable/bookmark"
+  		android:title="@string/bookmark"/>
+  <item android:title="@string/more"
+  		android:icon="@drawable/more">
+  	<menu>
+  		<item	android:id="@+id/clearHistory"
+  				android:title="@string/clearHistory"/>
+  		<item 	android:id="@+id/showHistory"
+  				android:title="@string/showHistory"/>
+  		<item	android:id="@+id/showBookmark"
+  				android:title="@string/find"/>
+  	</menu>
+  </item>
+  <item android:id="@+id/exit"
+  		android:icon="@drawable/exit"
+  		android:title="@string/exit"/>
+</menu>
+       
